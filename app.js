@@ -436,7 +436,7 @@ function fmtOdds(v) {
 
 function evStr(v) {
   if (v == null) return '-';
-  return `${v > 0 ? '+' : ''}${(v * 100).toFixed(1)}u`;
+  return `${v > 0 ? '+' : ''}${(v * 100).toFixed(1)}% EV`;
 }
 
 function hasPositiveEv(g) {
