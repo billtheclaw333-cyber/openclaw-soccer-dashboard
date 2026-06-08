@@ -1,20 +1,25 @@
 {
-  "run_date": "2026-06-11",
-  "generated_at": "2026-06-08T02:57:41.637921Z",
+  "run_date": "2026-06-07",
+  "generated_at": "2026-06-08T04:41:52Z",
   "schema_version": 1,
   "schema_label": "soccer-dashboard-audit-v1",
-  "blocked_count": 0,
-  "blocked_reasons": [],
-  "missing_moneyline": 2,
-  "missing_total": 2,
+  "blocked_count": 1,
+  "blocked_reasons": [
+    "No recent empirical match data found for Bangladesh U23s."
+  ],
+  "missing_moneyline": 4,
+  "missing_total": 6,
   "model_only_total": 0,
   "source_coverage": {
-    "fixtures_found": 2,
-    "modelable_games": 2,
-    "blocked_games": 0,
-    "moneyline_markets": 0,
-    "total_markets": 0,
+    "fixtures_found": 10,
+    "modelable_games": 9,
+    "blocked_games": 1,
+    "moneyline_markets": 5,
+    "total_markets": 3,
     "model_only_totals": 0
   },
-  "warnings": []
+  "warnings": [
+    "Manual export path used for international friendlies slate.",
+    "Ecuador vs Guatemala omitted because the pasted board was incomplete."
+  ]
 }
