@@ -1,0 +1,7 @@
+screenshots/
+test-*/
+staging*/
+*.log
+*.tmp
+*.bak
+.DS_Store

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenClaw Soccer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span class="header-wordmark">OPENCLAW</span>
+    <div class="header-divider"></div>
+    <nav>
+      <button class="nav-btn active" data-view="board" onclick="showView('board')">Daily Board</button>
+      <button class="nav-btn" data-view="diagnostics" onclick="showView('diagnostics')">Diagnostics</button>
+    </nav>
+    <div class="header-meta">
+      <span><span class="run-dot"></span> Live</span>
+      <span id="header-date"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="view-board" class="view active">
+      <div class="controls-bar">
+        <span class="date-label">Date</span>
+        <div class="date-picker" id="date-picker">
+          <div class="empty-state loading" style="padding:6px 0;font-size:11px">Loading...</div>
+        </div>
+        <div class="summary-pills" id="summary-pills"></div>
+      </div>
+
+      <div class="games-list" id="games-list">
+        <div class="empty-state loading">Loading fixtures...</div>
+      </div>
+    </div>
+
+    <div id="view-diagnostics" class="view">
+      <div id="diag-content">
+        <div class="empty-state loading">Loading audit data...</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
